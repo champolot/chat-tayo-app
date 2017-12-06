@@ -3,7 +3,7 @@ const socket = require('socket.io');
 
 // App setup
 const app = express();
-const server = app.listen(9000, ()=>{
+const server = app.listen(process.env.PORT || 9000, ()=>{
     console.log('listening to 9000');
 });
 
