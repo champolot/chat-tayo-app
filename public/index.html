@@ -11,6 +11,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
 </head>
 <body>
+    <audio controls id="send" hidden>
+        <source src="./sound/track01.mp3" type="audio/mpeg">
+    </audio> 
+    <audio controls id="recieve" hidden>
+        <source src="./sound/track02.mp3" type="audio/mpeg">
+    </audio> 
     
     <div id="mario-chat">
         <div id="chat-window" class="scroll">
@@ -19,12 +25,9 @@
         </div>
         <input id="handle" type="text" placeholder="Handle" />
         <input id="message" type="text" placeholder="Message" />
-        <button id="send">Send</button>
+        <button id="send">Press Enter</button>
     </div>
-
-    <div id="notification" class="notication">
-        <!-- <p id="notif"></p> -->
-    </div>
+    
 
     <footer class="footer">
         <p class="copyright">Code with ❤ by <a href="http://www.jeraldaustero.esy.es" class="link">Jao Austero</a></p>

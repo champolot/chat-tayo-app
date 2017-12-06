@@ -11,6 +11,7 @@ var message = document.getElementById('message');
 
 // Emit Events
 btn.addEventListener('click', function(){
+    document.getElementById('send').play();
     socket.emit('chat', {
         message: message.value,
         handle: handle.value
@@ -33,6 +34,7 @@ socket.on('chat', function(data){
 });
 
 socket.on('notif', function(data){
+    document.getElementById('recieve').play();
     $.toast(data.handle + data.message);
 })
 
