@@ -40,9 +40,6 @@ See also the my website [Jerald Austero](http://www.jeraldaustero.esy.es/).
 
 ## Sample Screenshot
 
-Landing Page
-![Landing Page](https://github.com/JaoAustero/insurancecompany/blob/master/public/img/mardown_img/0.jpg?raw=true)
-
 Chat
 ![Screenshot](https://github.com/JaoAustero/chat-tayo-app/blob/master/public/screenshot/screenshot.png?raw=true)
 
