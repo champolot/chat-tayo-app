@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
 </head>
 <body>
-    <audio controls id="send" hidden>
+    <audio controls id="sendtone" hidden>
         <source src="./sound/track01.mp3" type="audio/mpeg">
     </audio> 
     <audio controls id="recieve" hidden>
@@ -23,14 +23,14 @@
             <div id="output"></div>
             <div id="feedback"></div>
         </div>
-        <input id="handle" type="text" placeholder="Handle" />
-        <input id="message" type="text" placeholder="Message" />
-        <button id="send">Press Enter</button>
+        <input id="handle" type="text" placeholder="Your Name" />
+        <input id="message" type="text" placeholder="Your Message" />
+        <button id="send" type="submit">Click or Press Enter</button>
     </div>
     
 
     <footer class="footer">
-        <p class="copyright">Code with ❤ by <a href="http://www.jeraldaustero.esy.es" class="link">Jao Austero</a></p>
+        <p class="copyright">Code with ❤ by <a href="http://www.jeraldaustero.esy.es" target="_blank" class="link">Jao Austero</a></p>
     </footer>
     <script src="./chat.js"></script>
     <script
@@ -39,6 +39,5 @@
     crossorigin="anonymous"></script>
     <script src="./toast/jquery.toast.min.js"></script>
     <script src="./app.js"></script>
-</script>
 </body>
 </html>

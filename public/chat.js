@@ -11,7 +11,7 @@ var message = document.getElementById('message');
 
 // Emit Events
 btn.addEventListener('click', function(){
-    document.getElementById('send').play();
+    document.getElementById('sendtone').play();
     socket.emit('chat', {
         message: message.value,
         handle: handle.value

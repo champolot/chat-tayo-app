@@ -3,6 +3,7 @@ const socket = require('socket.io');
 
 // App setup
 const app = express();
+
 const server = app.listen(process.env.PORT || 9000, ()=>{
     console.log('listening to 9000');
 });
@@ -14,6 +15,8 @@ app.use(express.static('public'));
 const io = socket(server);
 
 io.on('connection', (socket)=>{
+    var ip = socket.conn.remoteAddress;
+    console.log(ip);
     console.log('made socket connection', socket.id);
 
     socket.on('chat', data => {

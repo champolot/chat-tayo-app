@@ -17,6 +17,6 @@ setInterval(function(){scroll(speed)}, 1000);
        $('#send').click();
        return false;  
      }
-});  
+}); 
 
 $("#notification").delay(8000).fadeOut("slow");
